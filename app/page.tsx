@@ -22,6 +22,16 @@ export default function Home() {
                     ногтях — только эстетика и носибельность 3+ недели.
                 </p>
             </div>
+            <div className="hidden max-md:flex items-center justify-between">
+                <div className="flex flex-col gap-2">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div className="flex flex-col gap-2">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <Model />
         </div>
     );
