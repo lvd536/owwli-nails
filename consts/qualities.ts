@@ -1,34 +1,34 @@
-import { LucideIcon, Menu } from "lucide-react";
+import Thumb from "@/public/thumb.png";
+import type { StaticImageData } from "next/image";
 
-interface IQuality {
+export interface IQuality {
     label: string;
     description: string;
-    icon: LucideIcon | string;
+    icon: string | StaticImageData;
 }
 
 export const qualities: IQuality[] = [
     {
         label: "Индивидуальный дизайн",
         description:
-            "Каждый маникюр создаётся под клиента: форма, длина, цвет и декор под стиль, настроение и образ. Никаких шаблонов — только уникальные работы.",
-        icon: Menu,
+            "Маникюр под ваш стиль, форму и настроение. Каждый дизайн — уникален.",
+        icon: Thumb,
     },
     {
         label: "Чистота и безопасность",
         description:
-            "Стерильные инструменты, одноразовые расходники и строгое соблюдение гигиены. Комфорт и безопасность клиента — в приоритете.",
-        icon: Menu,
+            "Стерильные инструменты и одноразовые материалы. Максимальный комфорт.",
+        icon: Thumb,
     },
     {
         label: "Качество и стойкость",
         description:
-            "Использование профессиональных материалов и проверенных техник. Маникюр сохраняет форму, блеск и аккуратный вид неделями.",
-        icon: Menu,
+            "Профессиональные материалы и техники. Аккуратный результат надолго.",
+        icon: Thumb,
     },
     {
         label: "Точность и внимание к деталям",
-        description:
-            "Аккуратная кутикула, симметрия, идеальные линии и продуманные акценты. Именно детали делают работу премиальной.",
-        icon: Menu,
+        description: "Идеальная форма, чистая кутикула и точные акценты.",
+        icon: Thumb,
     },
 ];

@@ -1,6 +1,8 @@
 import Model from "@/components/Model";
 import Image from "next/image";
 import gradient from "@/public/gradient.png";
+import { qualities } from "@/consts/qualities";
+import QualityCard from "@/components/QualityCard";
 
 export default function Home() {
     return (
@@ -22,15 +24,12 @@ export default function Home() {
                     ногтях — только эстетика и носибельность 3+ недели.
                 </p>
             </div>
-            <div className="hidden max-md:flex items-center justify-between">
-                <div className="flex flex-col gap-2">
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className="flex flex-col gap-2">
-                    <div></div>
-                    <div></div>
-                </div>
+            <div className="hidden max-md:flex flex-wrap items-center justify-between gap-2 m-2">
+                <QualityCard quality={qualities[0]} />
+                <QualityCard quality={qualities[1]} />
+
+                <QualityCard quality={qualities[2]} />
+                <QualityCard quality={qualities[3]} />
             </div>
             <Model />
         </div>
