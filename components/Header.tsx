@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
     const path = usePathname();
-    console.log(path);
 
     const handleBurgerClick = () => {
         document.getElementById("burgerMenu")?.classList.toggle("hidden");
@@ -19,13 +18,22 @@ export default function Header() {
                 Owwli nails
             </Link>
             <nav className="hidden sm:flex gap-6 text-lg font-semibold">
-                <Link href={browserRoutes.home.path}>
+                <Link
+                    href={browserRoutes.home.path}
+                    className={`${path === browserRoutes.home.path && "text-indigo-500"} transition-text duration-300`}
+                >
                     {browserRoutes.home.label}
                 </Link>
-                <Link href={browserRoutes.works.path}>
+                <Link
+                    href={browserRoutes.works.path}
+                    className={`${path === browserRoutes.works.path && "text-indigo-500"} transition-text duration-300`}
+                >
                     {browserRoutes.works.label}
                 </Link>
-                <Link href={browserRoutes.contacts.path}>
+                <Link
+                    href={browserRoutes.contacts.path}
+                    className={`${path === browserRoutes.contacts.path && "text-indigo-500"} transition-text duration-300`}
+                >
                     {browserRoutes.contacts.label}
                 </Link>
             </nav>
@@ -42,9 +50,24 @@ export default function Header() {
                 onClick={handleBurgerClick}
             >
                 <nav className="flex flex-col items-center justify-center gap-6 text-xl font-semibold">
-                    <Link href={browserRoutes.home.path}>О себе</Link>
-                    <Link href={browserRoutes.works.path}>Работы</Link>
-                    <Link href={browserRoutes.contacts.path}>Контакты</Link>
+                    <Link
+                        href={browserRoutes.home.path}
+                        className={`${path === browserRoutes.home.path && "text-indigo-500"} transition-text duration-300`}
+                    >
+                        О себе
+                    </Link>
+                    <Link
+                        href={browserRoutes.works.path}
+                        className={`${path === browserRoutes.works.path && "text-indigo-500"} transition-text duration-300`}
+                    >
+                        Работы
+                    </Link>
+                    <Link
+                        href={browserRoutes.contacts.path}
+                        className={`${path === browserRoutes.contacts.path && "text-indigo-500"} transition-text duration-300`}
+                    >
+                        Контакты
+                    </Link>
                 </nav>
                 <a
                     href="http://t.me/oliweeshka"
