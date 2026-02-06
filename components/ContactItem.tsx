@@ -14,7 +14,7 @@ export default function ContactItem({ contact }: IProps) {
         <li>
             <Link
                 href={contact.link}
-                className="flex md:w-60 gap-4 items-center justify-between bg-stone-900/60 rounded-lg p-2 pr-4"
+                className="flex md:w-60 gap-4 items-center justify-between bg-stone-900/60 transition-bg duration-300 hover:bg-stone-900/70 rounded-lg p-2 pr-4"
             >
                 <Image
                     src={contact.icon}
