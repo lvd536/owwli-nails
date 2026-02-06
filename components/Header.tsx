@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { browserRoutes } from "@/consts/routes";
 
 export default function Header() {
     const handleBurgerClick = () => {
@@ -11,9 +12,15 @@ export default function Header() {
         <div className="flex w-full px-8 py-2 items-center justify-between bg-foreground/8">
             <p className="text-xl font-bold">Owwli nails</p>
             <nav className="hidden sm:flex gap-6 text-lg font-semibold">
-                <Link href={""}>О себе</Link>
-                <Link href={""}>Работы</Link>
-                <Link href={""}>Контакты</Link>
+                <Link href={browserRoutes.home.path}>
+                    {browserRoutes.home.label}
+                </Link>
+                <Link href={browserRoutes.works.path}>
+                    {browserRoutes.works.label}
+                </Link>
+                <Link href={browserRoutes.contacts.path}>
+                    {browserRoutes.contacts.label}
+                </Link>
             </nav>
             <a
                 href="http://t.me/oliweeshka"

@@ -34,4 +34,4 @@ export const qualities: IQuality[] = [
         description: "Идеальная форма, чистая кутикула и точные акценты.",
         icon: Brush,
     },
-];
+] as const;
