@@ -1,4 +1,7 @@
 import Thumb from "@/public/thumb.png";
+import Star from "@/public/star.png";
+import Medal from "@/public/medal.png";
+import Brush from "@/public/brush.png";
 import type { StaticImageData } from "next/image";
 
 export interface IQuality {
@@ -12,7 +15,7 @@ export const qualities: IQuality[] = [
         label: "Индивидуальный дизайн",
         description:
             "Маникюр под ваш стиль, форму и настроение. Каждый дизайн — уникален.",
-        icon: Thumb,
+        icon: Star,
     },
     {
         label: "Чистота и безопасность",
@@ -24,11 +27,11 @@ export const qualities: IQuality[] = [
         label: "Качество и стойкость",
         description:
             "Профессиональные материалы и техники. Аккуратный результат надолго.",
-        icon: Thumb,
+        icon: Medal,
     },
     {
         label: "Точность и внимание к деталям",
         description: "Идеальная форма, чистая кутикула и точные акценты.",
-        icon: Thumb,
+        icon: Brush,
     },
 ];
