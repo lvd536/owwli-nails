@@ -13,7 +13,7 @@ export default function Home() {
                 className="absolute top-5 right-5 opacity-80"
             />
             <div className="h-0 w-160 absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#c92ec7] -rotate-30" />
-            <div className="md:absolute left-5 top-20 md:w-3/10 max-md:mt-5 max-md:px-2 z-2">
+            <div className="md:absolute left-5 top-20 md:w-4/10 max-md:mt-5 max-md:px-2 z-2">
                 <p className="font-bold text-2xl">Алина Оливьешкина</p>
                 <p className="font-medium text-lg">
                     Делаю не просто маникюр, а контент, который хочется
@@ -24,10 +24,9 @@ export default function Home() {
                     ногтях — только эстетика и носибельность 3+ недели.
                 </p>
             </div>
-            <div className="hidden max-md:flex flex-wrap items-center justify-between gap-2 m-2">
+            <div className="md:absolute left-0 top-80 flex md:flex-col flex-wrap max-md:items-center max-md:justify-between gap-2 m-2">
                 <QualityCard quality={qualities[0]} />
                 <QualityCard quality={qualities[1]} />
-
                 <QualityCard quality={qualities[2]} />
                 <QualityCard quality={qualities[3]} />
             </div>

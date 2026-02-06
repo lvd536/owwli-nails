@@ -7,11 +7,12 @@ interface IProps {
 
 export default function QualityCard({ quality }: IProps) {
     return (
-        <div className="flex h-20 w-full gap-2 items-center justify-start rounded-lg bg-stone-900 p-2">
-            <div className="min-w-12 min-h-12 max-w-12 max-h-12 rounded-lg p-2 bg-stone-800">
+        <div className="flex h-20 max-md:w-full gap-2 items-center justify-start rounded-lg bg-white/5 max-md:bg-stone-900 p-2 z-10">
+            <div className="min-w-12 min-h-12 max-w-12 max-h-12 rounded-lg p-2 bg-white/5 max-md:bg-stone-800">
                 <Image
                     src={quality.icon}
                     alt="quality card image"
+                    className="transition-rotate duration-300 hover:rotate-y-180"
                     width={50}
                     height={50}
                 />
