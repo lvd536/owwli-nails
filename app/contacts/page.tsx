@@ -1,6 +1,7 @@
 import { contacts } from "@/consts/contacts";
 import Link from "next/link";
 import Image from "next/image";
+import ContactItem from "@/components/ContactItem";
 
 export default function page() {
     return (
@@ -24,57 +25,9 @@ export default function page() {
                 </p>
             </div>
             <ul className="flex flex-wrap items-center justify-start max-md:gap-6 gap-2">
-                <li>
-                    <Link
-                        href={contacts.telegramNailsChannel.link}
-                        className="flex md:w-60 gap-4 items-center justify-between bg-stone-900/60 rounded-lg p-2 pr-4"
-                    >
-                        <Image
-                            src={contacts.telegramNailsChannel.icon}
-                            alt="Contact image"
-                            width={50}
-                            height={50}
-                            className="p-1 bg-stone-900/60 rounded-lg"
-                        />
-                        <p className="text-md font-medium">
-                            {contacts.telegramNailsChannel.label}
-                        </p>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        href={contacts.telegramPerson.link}
-                        className="flex md:w-60 gap-4 items-center justify-between bg-stone-900/60 rounded-lg p-2 pr-4"
-                    >
-                        <Image
-                            src={contacts.telegramPerson.icon}
-                            alt=""
-                            width={50}
-                            height={50}
-                            className="p-1 bg-stone-900/60 rounded-lg"
-                        />
-                        <p className="text-md font-medium">
-                            {contacts.telegramPerson.label}
-                        </p>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        href={contacts.telegramPersonChannel.link}
-                        className="flex md:w-60 gap-4 items-center justify-between bg-stone-900/60 rounded-lg p-2 pr-4"
-                    >
-                        <Image
-                            src={contacts.telegramPersonChannel.icon}
-                            alt=""
-                            width={50}
-                            height={50}
-                            className="p-1 bg-stone-900/60 rounded-lg"
-                        />
-                        <p className="text-md font-medium">
-                            {contacts.telegramPersonChannel.label}
-                        </p>
-                    </Link>
-                </li>
+                <ContactItem contact={contacts.telegramNailsChannel} />
+                <ContactItem contact={contacts.telegramPerson} />
+                <ContactItem contact={contacts.telegramPersonChannel} />
             </ul>
         </div>
     );
