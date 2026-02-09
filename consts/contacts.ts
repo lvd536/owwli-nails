@@ -5,17 +5,17 @@ import Girl from "@/public/girl.png";
 export const contacts = {
     telegramPerson: {
         label: "Личные сообщения",
-        link: "https://t.me/oliweeshka",
+        link: "https://t.me/privateMessages",
         icon: Chat,
     },
     telegramPersonChannel: {
         label: "Личный Канал",
-        link: "https://t.me/owwww567",
+        link: "https://t.me/privateChannel",
         icon: Girl,
     },
     telegramNailsChannel: {
         label: "Примеры работ",
-        link: "https://t.me/owwwwwli",
+        link: "https://t.me/workChannel",
         icon: Brush,
     },
 } as const;

@@ -14,7 +14,7 @@ export default function Home() {
             />
             <div className="h-0 w-160 absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#c92ec7] -rotate-30" />
             <div className="md:absolute left-5 top-20 md:w-4/10 max-md:mt-5 max-md:px-2 z-2">
-                <p className="font-bold text-2xl">Алина Оливьешкина</p>
+                <p className="font-bold text-2xl">Your name</p>
                 <p className="font-medium text-lg">
                     Делаю не просто маникюр, а контент, который хочется
                     скринить. Ко мне приходят за идеальным «под кутикулу»,
